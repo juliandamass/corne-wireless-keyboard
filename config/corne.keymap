@@ -36,8 +36,8 @@
 
             bindings = <
 &trans  &trans  &trans  &kp F10    &kp F11   &kp F12     &kp N7     &kp N8  &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
-&trans  &trans  &trans  &kp F7     &kp F8    &kp F9      &kp N4     &kp N5  &kp N6  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
-&trans  &trans  &trans  &trans     &trans    &trans      &kp N1     &kp N2  &kp N3  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE
+&trans  &trans  &trans  &kp F7     &kp F8    &kp F9      &kp N4     &kp N5  &kp N6  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans     &trans    &trans      &kp N1     &kp N2  &kp N3  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS
                         &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE  &trans  &trans
             >;
         };
