@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 12>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,10 +44,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &kp F10    &kp F11   &kp F12     &kp BSLH   &kp N7  &kp N8  &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans  &trans  &kp F7     &kp F8    &kp F9      &trans     &kp N4  &kp N5  &kp N6  &kp LBKT              &kp RBKT
-&trans  &trans  &trans  &trans     &trans    &trans      &trans     &kp N1  &kp N2  &kp N3  &kp LEFT_BRACE        &kp RIGHT_BRACE
-                        &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE  &trans  &kp N0
+&kp ESC  &trans  &trans  &kp F10    &kp F11   &kp F12     &kp BSLH   &kp N7  &kp N8  &kp N9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans   &trans  &trans  &kp F7     &kp F8    &kp F9      &trans     &kp N4  &kp N5  &kp N6  &kp LBKT              &kp RBKT
+&trans   &trans  &trans  &trans     &trans    &trans      &trans     &kp N1  &kp N2  &kp N3  &kp LEFT_BRACE        &kp RIGHT_BRACE
+                         &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE  &trans  &kp N0
             >;
         };
 
