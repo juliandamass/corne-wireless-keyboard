@@ -21,6 +21,11 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <0 12 24>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
@@ -49,10 +54,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC    &trans  &trans  &kp F10                               &kp F11   &kp F12     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MINUS   &kp BSPC
-&trans     &trans  &trans  &kp F7                                &kp F8    &kp F9      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp DELETE
-&kp LSHFT  &trans  &trans  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp F3    &kp F4      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &kp KP_EQUAL   &kp RET
-                           &kp LCTRL                             &kp LALT  &kp LGUI    &kp SPACE        &kp KP_EQUAL     &kp N0
+&kp ESC    &kp HOME  &kp PAGE_UP    &kp F10    &kp F11   &kp F12     &kp N7     &kp N8  &kp N9      &kp KP_MINUS   &kp KP_PLUS      &kp BSPC
+&trans     &kp END   &kp PAGE_DOWN  &kp F7     &kp F8    &kp F9      &kp N4     &kp N5  &kp N6      &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+&kp LSHFT  &trans    &trans         &kp GLOBE  &kp F3    &kp F4      &kp N1     &kp N2  &kp N3      &trans         &trans           &kp RET
+                                    &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE  &kp N0  &kp KP_DOT
             >;
         };
 
@@ -65,7 +70,7 @@
 
             bindings = <
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans     &trans    &kp UP    &trans     &trans  &kp BSPC
-&kp POUND  &kp DOLLAR       &kp PERCENT   &trans     &kp LBKT              &kp RBKT                 &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp DEL
+&kp POUND  &kp DOLLAR       &kp PERCENT   &trans     &kp LBKT              &kp RBKT                 &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
 &kp CARET  &kp AMPS         &kp ASTERISK  &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans     &trans    &trans    &trans     &trans  &kp RET
                                           &kp LCTRL  &kp LALT              &kp LGUI                 &kp SPACE  &trans    &trans
             >;
@@ -73,10 +78,10 @@
 
         config-layer {
             bindings = <
-&trans      &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans  &trans    &trans  &trans  &trans
+&bt BT_SEL 0  &trans  &trans  &trans  &trans  &bt BT_CLR    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
