@@ -54,10 +54,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans    &kp LG(GRAVE)  &kp F10    &kp F11   &kp F12     &kp N7     &kp N8  &kp N9      &kp KP_PLUS      &kp KP_MINUS    &kp BSPC
-&trans     &kp HOME  &kp PG_UP      &kp F7     &kp F8    &kp F9      &kp N4     &kp N5  &kp N6      &kp KP_MULTIPLY  &kp KP_DIVIDE   &trans
-&kp LSHFT  &kp END   &kp PG_DN      &trans     &kp F3    &kp F4      &kp N1     &kp N2  &kp N3      &kp KP_EQUAL     &kp UNDERSCORE  &kp RET
-                                    &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE  &kp N0  &kp KP_DOT
+&kp TAB    &none     &kp LG(GRAVE)  &kp F10    &kp F11   &kp F12     &kp KP_PLUS      &kp N7  &kp N8      &kp N9  &kp KP_MINUS    &kp BSPC
+&none      &kp HOME  &kp PG_UP      &kp F7     &kp F8    &kp F9      &kp KP_MULTIPLY  &kp N4  &kp N5      &kp N6  &kp KP_DIVIDE   &kp PIPE
+&kp LSHFT  &kp END   &kp PG_DN      &none      &kp F3    &kp F4      &kp KP_EQUAL     &kp N1  &kp N2      &kp N3  &kp UNDERSCORE  &kp RET
+                                    &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE        &kp N0  &kp KP_DOT
             >;
         };
 
@@ -69,19 +69,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB        &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LS(LG(N4))      &trans                &kp UP    &trans                 &trans  &kp BSPC
-&kp LG(GRAVE)  &kp POUND  &kp DOLLAR       &kp PERCENT  &kp LBKT              &kp RBKT                 &kp LS(LC(LG(N4)))  &kp LEFT              &kp DOWN  &kp RIGHT              &trans  &trans
-&kp LSHFT      &kp CARET  &kp AMPERSAND    &kp ASTRK    &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp LS(LG(N5))      &kp LG(LEFT_BRACKET)  &trans    &kp RG(RIGHT_BRACKET)  &trans  &kp RET
-                                           &kp LCTRL    &kp LALT              &kp LGUI                 &kp SPACE           &trans                &trans
+&kp TAB    &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LS(LG(N4))      &none                 &kp UP    &none                  &none  &kp BSPC
+&kp TILDE  &kp GRAVE  &kp DOLLAR       &kp PERCENT  &kp LBKT              &kp RBKT                 &kp LS(LC(LG(N4)))  &kp LEFT              &kp DOWN  &kp RIGHT              &none  &kp BSLH
+&kp LSHFT  &kp CARET  &kp AMPERSAND    &kp ASTRK    &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp LS(LG(N5))      &kp LG(LEFT_BRACKET)  &none     &kp RG(RIGHT_BRACKET)  &none  &kp RET
+                                       &kp LCTRL    &kp LALT              &kp LGUI                 &kp SPACE           &none                 &none
             >;
         };
 
         config-layer {
             bindings = <
-&bt BT_SEL 0  &kp LC(LG(Q))  &trans  &trans  &trans  &bt BT_CLR    &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_SEL 1  &trans         &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_SEL 2  &trans         &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                     &trans  &trans  &trans        &trans  &trans  &trans
+&bt BT_SEL 0  &kp LC(LG(Q))  &none  &none  &none  &bt BT_CLR    &none  &none  &none  &none  &none  &none
+&bt BT_SEL 1  &none          &none  &none  &none  &none         &none  &none  &none  &none  &none  &none
+&bt BT_SEL 2  &none          &none  &none  &none  &none         &none  &none  &none  &none  &none  &none
+                                    &none  &none  &none         &none  &none  &none
             >;
         };
     };
