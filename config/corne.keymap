@@ -54,10 +54,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &none     &kp LG(GRAVE)  &kp F10    &kp F11   &kp F12     &kp KP_PLUS      &kp N7  &kp N8      &kp N9  &kp KP_MINUS    &kp BSPC
-&none      &kp HOME  &kp PG_UP      &kp F7     &kp F8    &kp F9      &kp KP_MULTIPLY  &kp N4  &kp N5      &kp N6  &kp KP_DIVIDE   &kp PIPE
-&kp LSHFT  &kp END   &kp PG_DN      &none      &kp F3    &kp F4      &kp KP_EQUAL     &kp N1  &kp N2      &kp N3  &kp UNDERSCORE  &kp RET
-                                    &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE        &kp N0  &kp KP_DOT
+&kp TAB    &none     &kp LG(GRAVE)  &kp F10    &kp F11   &kp F12     &kp KP_PLUS      &kp N7      &kp N8  &kp N9  &kp KP_MINUS    &kp BSPC
+&none      &kp HOME  &kp PG_UP      &kp F7     &kp F8    &kp F9      &kp KP_MULTIPLY  &kp N4      &kp N5  &kp N6  &kp KP_DIVIDE   &kp PIPE
+&kp LSHFT  &kp END   &kp PG_DN      &none      &kp F3    &kp F4      &kp KP_EQUAL     &kp N1      &kp N2  &kp N3  &kp UNDERSCORE  &kp RET
+                                    &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE        &kp KP_DOT  &kp N0
             >;
         };
 
