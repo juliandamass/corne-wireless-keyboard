@@ -31,11 +31,10 @@
     behaviors {
         multi_mod_hold: multi_mod_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "MULTI_MOD_HOLD";
+            label = "Hold Space + Mods";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <39>;
             tapping-term-ms = <0>;
         };
     };
