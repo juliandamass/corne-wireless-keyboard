@@ -43,7 +43,7 @@
         mod_sticky: mod_sticky {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LA(LC(LG(LSHIFT)))>;
+            bindings = <&kp LSHIFT &kp LALT &kp LCTRL &kp LGUI>;
             label = "MOD_STICKY";
         };
     };
